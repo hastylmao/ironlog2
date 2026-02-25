@@ -252,7 +252,7 @@ export default function ProfilePage() {
             {/* Gemini API Key */}
             <div className="glass-card-solid p-4 rounded-2xl mb-5">
                 <div className="flex items-center gap-3 mb-3">
-                    <Key className="w-5 h-5 text-purple-400 shrink-0" />
+                    <Key className="text-purple-400 shrink-0" size={20} />
                     <h3 className="text-sm font-semibold text-white">Gemini API Key</h3>
                     {geminiStatus === 'valid' && <span className="text-xs text-green-400 flex items-center gap-1"><Check className="w-3 h-3" /> Connected</span>}
                     {geminiStatus === 'invalid' && <span className="text-xs text-red-400 flex items-center gap-1"><X className="w-3 h-3" /> Invalid</span>}
@@ -303,20 +303,20 @@ export default function ProfilePage() {
             <div className="space-y-2">
                 <button
                     onClick={handleExportData}
-                    className="w-full glass-card-solid p-4 rounded-xl flex items-center gap-3 hover:bg-zinc-800/50 transition-colors"
+                    className="w-full glass-card-solid p-4 rounded-xl flex items-center gap-3 hover:bg-zinc-800/50 transition-colors relative z-10 text-left"
                 >
-                    <Download className="w-5 h-5 text-blue-400 shrink-0" />
+                    <Download className="text-blue-400 shrink-0" size={20} />
                     <span className="text-sm font-medium flex-1 text-left">Export Data (JSON)</span>
-                    <ChevronRight className="w-4 h-4 text-zinc-600" />
+                    <ChevronRight className="text-zinc-600 shrink-0" size={16} />
                 </button>
 
                 <button
                     onClick={handleLogout}
-                    className="w-full glass-card-solid p-4 rounded-xl flex items-center gap-3 hover:bg-red-500/5 transition-colors"
+                    className="w-full glass-card-solid p-4 rounded-xl flex items-center gap-3 hover:bg-red-500/5 transition-colors relative z-10 text-left"
                 >
-                    <LogOut className="w-5 h-5 text-red-400 shrink-0" />
+                    <LogOut className="text-red-400 shrink-0" size={20} />
                     <span className="text-sm font-medium text-red-400 flex-1 text-left">Sign Out</span>
-                    <ChevronRight className="w-4 h-4 text-zinc-600" />
+                    <ChevronRight className="text-zinc-600 shrink-0" size={16} />
                 </button>
             </div>
 

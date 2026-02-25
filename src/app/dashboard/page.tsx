@@ -336,22 +336,22 @@ export default function DashboardPage() {
                 <motion.div variants={itemVariants} className="grid grid-cols-2 gap-3">
                     <motion.button
                         onClick={() => setShowFoodModal(true)}
-                        className="glass-card-solid p-4 rounded-2xl flex items-center gap-3 hover:bg-zinc-800/50 transition-colors"
+                        className="glass-card-solid p-4 rounded-2xl flex items-center gap-3 hover:bg-zinc-800/50 transition-colors relative z-10"
                         whileTap={{ scale: 0.97 }}
                     >
                         <div className="w-10 h-10 rounded-xl bg-green-500/15 flex items-center justify-center">
-                            <UtensilsCrossed className="w-5 h-5 text-green-400 shrink-0" />
+                            <UtensilsCrossed className="text-green-400 shrink-0" size={20} />
                         </div>
                         <span className="text-sm font-semibold">Log Food</span>
                     </motion.button>
 
                     <motion.button
                         onClick={() => setShowWorkoutModal(true)}
-                        className="glass-card-solid p-4 rounded-2xl flex items-center gap-3 hover:bg-zinc-800/50 transition-colors"
+                        className="glass-card-solid p-4 rounded-2xl flex items-center gap-3 hover:bg-zinc-800/50 transition-colors relative z-10"
                         whileTap={{ scale: 0.97 }}
                     >
                         <div className="w-10 h-10 rounded-xl bg-purple-500/15 flex items-center justify-center">
-                            <Dumbbell className="w-5 h-5 text-purple-400 shrink-0" />
+                            <Dumbbell className="text-purple-400 shrink-0" size={20} />
                         </div>
                         <span className="text-sm font-semibold">Log Workout</span>
                     </motion.button>

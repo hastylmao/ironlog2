@@ -60,14 +60,15 @@ export default function SocialPage() {
 
             {/* Search Bar */}
             <div className="relative mb-6">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-zinc-500" />
                 <input
                     type="text"
                     value={searchQuery}
                     onChange={(e) => handleSearch(e.target.value)}
                     placeholder="Search users by username..."
-                    className="input-field pl-12"
+                    className="input-field"
+                    style={{ paddingLeft: '3.5rem' }}
                 />
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500 pointer-events-none" size={20} />
             </div>
 
             {!selectedUser ? (
@@ -107,7 +108,7 @@ export default function SocialPage() {
 
                     {!searchQuery && (
                         <div className="glass-card-solid p-8 rounded-2xl text-center">
-                            <Search className="w-12 h-12 text-zinc-700 mx-auto mb-3" />
+                            <Search className="text-zinc-700 mx-auto mb-3" size={48} />
                             <p className="text-sm text-zinc-500">Search for users by username to view their profiles</p>
                         </div>
                     )}

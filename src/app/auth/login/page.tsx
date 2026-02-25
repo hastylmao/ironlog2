@@ -95,32 +95,34 @@ export default function LoginPage() {
                     <div className="space-y-2">
                         <label className="text-sm font-medium text-zinc-400">Email</label>
                         <div className="relative">
-                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-zinc-500" />
                             <input
                                 id="login-email"
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="your@email.com"
-                                className="input-field pl-12"
+                                className="input-field"
+                                style={{ paddingLeft: '3.5rem' }}
                                 required
                             />
+                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500 pointer-events-none" size={20} />
                         </div>
                     </div>
 
                     <div className="space-y-2">
                         <label className="text-sm font-medium text-zinc-400">Password</label>
                         <div className="relative">
-                            <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-zinc-500" />
                             <input
                                 id="login-password"
                                 type={showPassword ? 'text' : 'password'}
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 placeholder="••••••••"
-                                className="input-field pl-12 pr-12"
+                                className="input-field"
+                                style={{ paddingLeft: '3.5rem', paddingRight: '3.5rem' }}
                                 required
                             />
+                            <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500 pointer-events-none" size={20} />
                             <button
                                 type="button"
                                 onClick={() => setShowPassword(!showPassword)}
