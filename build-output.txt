@@ -1,0 +1,77 @@
+﻿node.exe : ÔÜá Warning: 
+Next.js inferred your 
+workspace root, but it may 
+not be correct.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (ÔÜá War  
+  ning: Ne...not be correc   
+ t.:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+ We detected multiple 
+lockfiles and selected the 
+directory of C:\Users\aksha\D
+ocuments\package-lock.json 
+as the root directory.
+ To silence this warning, 
+set `turbopack.root` in your 
+Next.js config, or consider 
+removing one of the 
+lockfiles if it's not needed.
+   See https://nextjs.org/doc
+s/app/api-reference/config/ne
+xt-config-js/turbopack#root-d
+irectory for more 
+information.
+ Detected additional 
+lockfiles: 
+   * C:\Users\aksha\Documents
+\SwiftV2\ironlog\package-lock
+.json
+
+Ôû▓ Next.js 16.1.6 (Turbopack)
+
+ÔÜá The "middleware" file 
+convention is deprecated. 
+Please use "proxy" instead. 
+Learn more: https://nextjs.or
+g/docs/messages/middleware-to
+-proxy
+  Creating an optimized production build ...
+Ô£ô Compiled successfully in 2.8s
+  Running TypeScript ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/12) ...
+  Generating static pages using 15 workers (3/12) 
+  Generating static pages using 15 workers (6/12) 
+  Generating static pages using 15 workers (9/12) 
+Ô£ô Generating static pages using 15 workers (12/12) in 614.3ms
+  Finalizing page optimization ...
+
+Route (app)
+Ôöî Ôùï /
+Ôö£ Ôùï /_not-found
+Ôö£ Ôùï /auth/login
+Ôö£ Ôùï /auth/signup
+Ôö£ Ôùï /dashboard
+Ôö£ Ôùï /dashboard/history
+Ôö£ Ôùï /dashboard/log
+Ôö£ Ôùï /dashboard/profile
+Ôö£ Ôùï /dashboard/social
+Ôöö Ôùï /onboarding
+
+
+ãÆ Proxy (Middleware)
+
+Ôùï  (Static)  prerendered as static content
+
